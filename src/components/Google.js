@@ -9,11 +9,8 @@ export class Google extends Component {
         return (
             <div>
                 <GoogleLogin
-                    clientId="972482179616-nhdfecvqepr2hut0fsctf3a9g2auffe5.apps.googleusercontent.com"
+                    clientId="972482179616-spat5nts1obpfcrtc0vpa5oc41vic1ro.apps.googleusercontent.com"
                     buttonText="Login"
-                    render={renderProps => (
-                        <button onClick={renderProps.onClick} disabled={renderProps.disabled}>This is my custom Google button</button>
-                    )}
                     onSuccess={this.responseGoogle}
                     onFailure={this.responseGoogle}
                     cookiePolicy={'single_host_origin'}
